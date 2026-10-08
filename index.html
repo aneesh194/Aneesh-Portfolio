@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aneesh Portfolio | Creative Designer & Developer</title>
+  <meta name="description" content="Elegant and professional portfolio showcasing creative development work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script>
+    window.addEventListener('error', function(e) {
+      const errorDiv = document.createElement('div');
+      errorDiv.style.position = 'fixed';
+      errorDiv.style.top = '0';
+      errorDiv.style.left = '0';
+      errorDiv.style.width = '100vw';
+      errorDiv.style.height = '100vh';
+      errorDiv.style.backgroundColor = 'rgba(255, 0, 0, 0.9)';
+      errorDiv.style.color = 'white';
+      errorDiv.style.zIndex = '999999';
+      errorDiv.style.padding = '2rem';
+      errorDiv.style.fontFamily = 'monospace';
+      errorDiv.style.overflow = 'auto';
+      errorDiv.innerHTML = `<h1>Application Error</h1><p><b>Message:</b> ${e.message}</p><p><b>File:</b> ${e.filename}</p><p><b>Line:</b> ${e.lineno}</p><h2>Stack:</h2><pre>${e.error ? e.error.stack : 'No stack available'}</pre>`;
+      document.body.appendChild(errorDiv);
+    });
+  </script>
+</head>
+
+<body class="bg-background text-foreground antialiased selection:bg-accent/40">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
